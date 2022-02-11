@@ -1,10 +1,12 @@
 #include<stdio.h>
 
 int Potencia(int a, int b){
-    for(int i=1; i<=b; i++){
-        a = a*a;
-        return a;
+    int c = a;
+    for(int i=1; i<b; i++){
+        c = c * a;
+        printf ("%i\n", c);
     }
+    return c;
 }
 
 void main(){
@@ -15,5 +17,5 @@ void main(){
     printf("Introduzca la potencia de %i: ", x);
     scanf("%i", &y);
 
-    printf("El resultado de %i elevado a %i es= %i", x, y, Potencia(x, y));
+    printf("El resultado de %i elevado a %i es = %i", x, y, Potencia(x, y));
 }
